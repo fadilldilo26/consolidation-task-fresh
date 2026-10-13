@@ -1,5 +1,12 @@
-# Use official Python image as base
+# Use official Python 3.12 image as base
 FROM python:3.12-slim
+
+# Install system dependencies required for mysqlclient
+RUN apt-get update && apt-get install -y \
+    default-libmysqlclient-dev \
+    build-essential \
+    pkg-config \
+    && rm -rf /var/lib/apt/lists/*
 
 # Set working directory inside container
 WORKDIR /app

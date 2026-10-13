@@ -77,12 +77,18 @@ WSGI_APPLICATION = 'news_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/6.1/ref/settings/#databases
 
+import os
+
 DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': os.environ.get('DB_NAME', 'newsdb'),
+        'USER': os.environ.get('DB_USER', 'newsuser'),
+        'PASSWORD': os.environ.get('DB_PASSWORD', 'newspassword'),
+        'HOST': os.environ.get('DB_HOST', 'localhost'),
+        'PORT': '3306',
     }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/6.1/ref/settings/#auth-password-validators
