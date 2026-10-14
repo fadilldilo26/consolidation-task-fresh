@@ -38,7 +38,7 @@ Before running migrations, you must create the database manually:
 ### 3. Project Configuration
 1. Clone the repository:
 ```bash
-    git clone https://github.com/fadildilo26/news-app-capstone.git
+    git clone https://github.com/fadilldilo26/consolidation-task-fresh.git
     cd news-app-capstone-main
 ```
 
