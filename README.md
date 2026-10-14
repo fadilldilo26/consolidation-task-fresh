@@ -13,7 +13,7 @@ A full-stack Django news application featuring role-based access control for Pub
 - **Backend**: Django 4.2.30, Django REST Framework
 - **Database**: MariaDB / MySQL
 - **Frontend**: Bootstrap 5, HTML5/CSS3
-- **Version Control**: Git & GitHub
+- **Version Control**: Git & GitHub 
 
 ## ⚙️ Setup Instructions
 
@@ -38,7 +38,7 @@ Before running migrations, you must create the database manually:
 ### 3. Project Configuration
 1. Clone the repository:
 ```bash
-    git clone https://github.com/fadildilo26/news-app-capstone.git
+    git clone https://github.com/fadilldilo26/consolidation-task-fresh.git
     cd news-app-capstone-main
 ```
 
